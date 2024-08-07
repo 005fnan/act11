@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div input{
+           font-size: large;
+            width: 90%;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+            text-align: left;
+        }
+        div select{
+            font-size: large;
+            width: 90%;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px black;
+        }
+        div label{
+            height: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .main{
+          
+          font-size: x-large;
+           
+           padding: 30px;
+            align-items: center;
+            width: 800px;
+            background-color: lightgray;
+        }
+        input[type=submit]{
+            margin-top: 10px;
+            height: 40px;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+        .dr {
+            
+           
+            background-color: green;
+             color: white;
+             padding: 15px;
+            font-size: 20px;
+            border: none;
+             width: 150px;
+  }
+        .drcnt{
+            display: none;
+            position: absolute;
+            background-color:rgb(211, 211, 211) ;
+           
+        }
+        .drcnt a{
+            color: black;
+            text-decoration: none;
+            text-align: left;
+            
+        }
+        .dro{
+          
+           padding: 30px;
+        }
+        .dro:hover .drcnt {
+            display: block;
+
+            
+            }
+            input[type=submit]:hover {
+                background-color: blue;
+            }
+            li{
+             color: black;
+            padding-top: 12px;
+            padding-right: 40px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        
+
+            }
+            .pos{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+    </style>
+</head>
+<body>
+    <div class="pos">
+        <div class="main">
+
+        
+        <form>
+            <div><label  for="fname">First name</label>   </div >  <br>
+            <div><input type="text" placeholder="your name.." id="fname" name="fname"></div><br>
+            <div> <label for="lname">Last name</label></div> <br>
+            <div><input type="text" placeholder="your last name.." id="lname" name="lname" ></div> <br>
+            <div><label for="coun">Country</label></div> <br>
+           <div><select name="country" id="country">
+               <option value="ethiopia">ethiopia</option>
+               <option value="eritrea"> eritrea</option>
+               <option value="venezuela">venezuela</option>   
+           </select></div> <br>
+           <div> <input type="submit"></div><br>
+        
+           
+        </form>
+    </div>
+    <div class="dro">
+       <button class="dr">Dropdown</button>
+       <div class="drcnt">
+         <ul>
+             <li><a href="a">Link1</a></li>
+            <li><a href="b">Link2</a></li>
+             <li><a href="c">Link3</a></li>
+         </ul>
+       </div>
+    </div>
+    </div>
+    </body>
+</html>
